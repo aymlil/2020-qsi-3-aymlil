@@ -27,8 +27,12 @@ let makeContainer = text => {
   content;
 };
 
+ReactDOMRe.render(<Menu/>, makeContainer("Menu"));
+
+ReactDOMRe.render(<Router/>, makeContainer(""));
+
 // All 4 examples.
-ReactDOMRe.render(<Greeting />, makeContainer("Atomic Greeting"));
+/*ReactDOMRe.render(<Greeting />, makeContainer("Atomic Greeting"));
 
 ReactDOMRe.render(
   <BlinkingGreeting> {React.string("Hello!")} </BlinkingGreeting>,
@@ -46,3 +50,4 @@ ReactDOMRe.render(
 );
 
 ReactDOMRe.render(<FetchRandomDog />, makeContainer("1 random Dog"));
+*/
